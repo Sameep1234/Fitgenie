@@ -139,8 +139,8 @@ INSERT INTO `dim`.`user` (`userId`, `firstName`, `lastName`, `email`, `age`, `we
 INSERT INTO `dim`.`user` (`userId`, `firstName`, `lastName`, `email`, `age`, `weight`, `height`, `bloodGroup`) VALUES ('2', 'Malav', 'Doshi', 'malavdoshi312@gmail.com', '19', '75', '177', 'O+');
 INSERT INTO `dim`.`user` (`userId`, `firstName`, `lastName`, `email`, `age`, `weight`, `height`, `bloodGroup`) VALUES ('3 ', 'Parsha', 'Shah', 'parshwa@gmail.com', '15', '99', '130', 'B-');
 
-INSERT INTO `dim`.`medicaldetails` (`userId`, `userMed`) VALUES ('1', 'cholesterol diabetes thyroid');
-INSERT INTO `dim`.`medicaldetails` (`userId`, `userMed`) VALUES ('3', 'blood_pressure');
+INSERT INTO `dim`.`medicalDetails` (`userId`, `userMed`) VALUES ('1', 'cholesterol diabetes thyroid');
+INSERT INTO `dim`.`medicalDetails` (`userId`, `userMed`) VALUES ('3', 'blood_pressure');
 
 insert into preferences values (1,'I101 I107 I109 I118'),(2,'I103 I106 I108 I118 I120'), (3,'I105 I111 I116 I114 I113 I112');
 
@@ -195,12 +195,12 @@ INSERT INTO medicalIssues VALUES
 ('thyroid','Dairy Gluten Sugar'),
 ('blood pressure','Sugar Meat Caffeine');
 
-UPDATE `dim`.`medicalissues` SET `disease` = 'blood_pressure' WHERE (`disease` = 'blood pressure');
+UPDATE `dim`.`medicalIssues` SET `disease` = 'blood_pressure' WHERE (`disease` = 'blood pressure');
 
-UPDATE `dim`.`medicalissues` SET `deniedIngredients` = 'I120 I115' WHERE (`disease` = 'blood pressure');
-UPDATE `dim`.`medicalissues` SET `deniedIngredients` = 'I101 I118' WHERE (`disease` = 'cholesterol');
-UPDATE `dim`.`medicalissues` SET `deniedIngredients` = 'I120' WHERE (`disease` = 'diabetes');
-UPDATE `dim`.`medicalissues` SET `deniedIngredients` = 'I101 I120 I119' WHERE (`disease` = 'thyroid');
+UPDATE `dim`.`medicalIssues` SET `deniedIngredients` = 'I120 I115' WHERE (`disease` = 'blood pressure');
+UPDATE `dim`.`medicalIssues` SET `deniedIngredients` = 'I101 I118' WHERE (`disease` = 'cholesterol');
+UPDATE `dim`.`medicalIssues` SET `deniedIngredients` = 'I120' WHERE (`disease` = 'diabetes');
+UPDATE `dim`.`medicalIssues` SET `deniedIngredients` = 'I101 I120 I119' WHERE (`disease` = 'thyroid');
 
 insert into exercise (`workType`, `reqNutrient`,`image`) values
 ('Leg Workout - Beginner', 'fibre','https://c4.wallpaperflare.com/wallpaper/409/386/366/legs-female-workout-crossfit-wallpaper-preview.jpg'),

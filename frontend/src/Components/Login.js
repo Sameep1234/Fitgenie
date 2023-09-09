@@ -78,7 +78,7 @@ class Login extends Component {
                             <div className="d-flex justify-content-center">
                                 <GoogleLogin
                                     onSuccess={this.responseGoogle}
-                                    clientId="38617884169-qtrirrbfg3t1j6bfs7oi3aeconfelfjj.apps.googleusercontent.com"
+                                    clientId="1070885344191-gv1e5ft26cp7lch8u2g13qt3lbh9qgek.apps.googleusercontent.com"
                                     cookiePolicy={'single_host_origin'}
                                     render={renderProps => (
                                         <Button style={{ backgroundColor: "#0D50DA" }} onClick={renderProps.onClick} disabled={renderProps.disabled}>Login With Google</Button>
